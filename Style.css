@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body {
+
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #36517E ;
+    font-size:  x-large;
+}
+body p {
+    font-family: monospace;
+    font-size: x-large;
+    color: rgb(107, 183, 212)
+    
+ 
+}
+
+header p {
+	color: white;
+	font-size: 40px;
+	text-transform: uppercase;
+
+}
+header {
+    vertical-align: baseline;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+ul {
+
+	display: flex;
+	list-style-type: none;
+	font-size: 20px;
+
+}
+ul li a {
+
+	padding: 0 20px;
+	text-decoration: none;
+	color: whitesmoke ;
+	display: inline-block;
+
+}
+ul ul {
+
+	position: absolute;
+	top: 60px;
+	display: none;
+	padding: 5px;
+
+
+}
+ul li:hover > ul{
+
+	background: #36517E;
+	display: block;
+    color: white;
+
+}
+li a::after{
+
+	content:'';
+	display: block;
+	height: 4px;
+	width: 0;
+	background: #c4c4f7;
+	transition: all .5s;
+
+
+}
+li a:hover ::after {
+	width: 100%;
+
+}
+main {
+
+	display: flex;
+	height: calc(100vh - 100px);
+	align-items: center;
+	justify-content: center;
+
+}
+.info-tech {
+
+	max-width: 800px;
+	height: auto;
+
+}
+.content-left {
+
+	width: 30%;
+
+}
+select {
+    background-color: #36517E;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+button {
+    background-color: #36517E;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 1px solid rgb(6, 135,248);
+}
+h1, h5 {
+    color: white;
+}
+.getstarted-btn {
+    background-color: #36517E;
+    font-size: 20px;
+    border: 1px solid rgb(6, 135,248);
+    border-collapse: collapse;
+    border-radius: 25px;
+    padding: 10px 15px; 
+}
+.GS {
+    background:rgb(134, 193, 245);
+    outline: none;
+    border: none;
+    font-weight: 700;
+    color: white;
+    padding: 3%;
+    font-family: monospace;
+}
+.WV {
+    border: none;
+    color: white;
+    padding:5px 5px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+li a:hover {
+    color: white;
+    background-color: gray;
+    text-decoration: underline;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+img{
+    width: 770px;
+    height: 770px;
+    background-color: #36517E;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+  @keyframes example {
+    0% {background-color:#36517E; bottom:0px; top:0px;}
+    25% {background-color:#36517E; bottom:20px; top:20px;}
+    50% {background-color:#36517E; bottom:0px; top:0px;}
+    70% {background-color:#36517E; bottom:20px; top:20px;}
+    100% {background-color:#36517E; bottom:0px; top:0px;}
+}
